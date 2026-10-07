@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMPRAS — Sistem Informasi Manajemen Sarana dan Prasarana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-visual">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          <strong>SIMPRAS</strong>
+          <span>Sarana & Prasarana</span>
+        </div>
+      </div>
+      <div class="visual-content">
+        <span class="eyebrow">Sistem Informasi Sekolah</span>
+        <h1>Kelola sarana dan prasarana sekolah dengan lebih mudah.</h1>
+        <p>Kelola fasilitas, pengajuan peminjaman, jadwal, pengguna, dan riwayat aktivitas dalam satu sistem.</p>
+        <div class="feature-list">
+          <div><span>✓</span> Data sarana & prasarana terpusat</div>
+          <div><span>✓</span> Status fasilitas diperbarui secara real-time</div>
+          <div><span>✓</span> Pengajuan dan jadwal lebih teratur</div>
+        </div>
+      </div>
+      <div class="visual-footer">© 2026 SIMPRAS</div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="mobile-brand">
+          <div class="brand-mark">S</div>
+          <div><strong>SIMPRAS</strong><span>Sarana & Prasarana</span></div>
+        </div>
+        <div class="login-heading">
+          <span class="eyebrow">Selamat datang</span>
+          <h2>Masuk ke SIMPRAS</h2>
+          <p>Silakan masuk menggunakan akun yang telah terdaftar.</p>
+        </div>
+
+        <form id="loginForm" autocomplete="on">
+          <label for="username">Username</label>
+          <div class="input-wrap">
+            <span class="input-icon">👤</span>
+            <input id="username" name="username" type="text" placeholder="Masukkan username" required>
+          </div>
+
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔒</span>
+            <input id="password" name="password" type="password" placeholder="Masukkan password" required>
+            <button type="button" class="toggle-password" id="togglePassword" aria-label="Tampilkan password">Tampilkan</button>
+          </div>
+
+          <div class="form-row">
+            <label class="remember"><input type="checkbox" id="remember"> <span>Ingat saya</span></label>
+            <button type="button" class="forgot" id="forgotBtn">Lupa password?</button>
+          </div>
+
+          <button class="login-btn" type="submit">Masuk <span>→</span></button>
+          <p class="login-message" id="loginMessage" role="alert"></p>
+        </form>
+
+        <div class="login-note">
+          <strong>SIMPRAS</strong> digunakan oleh Admin Sarpras dan Peminjam untuk mengelola penggunaan fasilitas sekolah.
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
